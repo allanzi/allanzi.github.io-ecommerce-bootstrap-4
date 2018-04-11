@@ -9,3 +9,90 @@
 .card {
     margin-bottom: 25px;
 }
+
+#bgEsc {
+    top: 0;
+    left: calc(-8000px + ((100% - 1200px)/2));
+    position: fixed;
+    background-image: url(https://www.uzgames.com.br/Assets/Uploads/home/bg_farcry5Lanc_esq.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 8000px;
+    height: 100%;
+    z-index: 0;
+}
+
+#bgDir {
+    top: 0;
+    left: calc(100% - ((100% - 1200px)/2));
+    position: fixed;
+    background-image: url(https://www.uzgames.com.br/Assets/Uploads/home/bg_farcry5Lanc_dir.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 8000px;
+    height: 100%;
+    z-index: 0;
+}
+
+nav {
+    z-index: 999999;
+    background-color: #63686d!important;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1185px !important;
+    }
+}
+
+body {
+    font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif;
+}
+
+nav > div.container {
+    padding: 0 !important;
+}
+
+main {
+    margin-top: 82px; 
+}
+
+.showCase-title:before {
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    width: 15px;
+    height: 14px;
+    border-top: 2px solid #b71c1c;
+    border-left: 2px solid #b71c1c;
+    margin-left: 0.5em;
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+    transform: rotate(223deg);
+    background: #f8f9fa;
+}
+
+.showCase-title {
+    color: #1c1c1c;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #b71c1c;
+    font-size: 19px;
+    font-weight: 300;
+    position: relative;
+}
+.showCase-title {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+}
