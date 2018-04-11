@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="astec">
 
 <head>
     <meta charset="UTF-8">
@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
-  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-  crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+        crossorigin="anonymous">
+
+    <script src="vendor/angularjs/angularjs.js"></script>
+    <script src="vendor/custom/js/main.js"></script>
 </head>
 
-<body class="bg-">
+<body class="bg-light">
 
     <header id="luxbar" class="luxbar-fixed">
         <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
@@ -45,33 +46,23 @@
                     <a href="#">Outros</a>
                 </li>
                 <li class="luxbar-item">
-                    <a href="carrinho.html"><i class="material-icons float-left">shopping_cart</i> Carrinho</a>
+                    <a href="carrinho.html">
+                        <i class="material-icons float-left">shopping_cart</i> Carrinho</a>
                 </li>
             </ul>
         </div>
     </header>
 
-    <main class="container">
+    <main class="container" ng-controller="IndexController">
 
         <h2 class="showCase-title animated fadeInUp d-none d-sm-block" style="margin-bottom: 10px;">Destaques</h2>
 
         <br class="d-none d-sm-block">
 
         <div id="carouselExampleIndicators" class="carousel slide d-none d-sm-block animated fadeInUp" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://lorempixel.com/1554/443/technics/1" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="https://lorempixel.com/1554/443/technics/2" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="https://lorempixel.com/1554/443/technics/3" alt="Third slide">
+            <div class="carousel-inner" >
+                <div ng-class="key == 0  ? 'carousel-item active' : 'carousel-item'" ng-repeat="(key, imagem) in imagens">
+                    <img class="d-block w-100" ng-src="{{imagem.url}}" alt="First slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -92,11 +83,7 @@
 
         <form class="animated fadeInUp">
             <div class="form-group mx-sm-3 mb-2">
-                <input type="text" class="form-control" placeholder="Digite o que você procura">
-            </div>
-            <div class="form-group mx-sm-3 mb-2">
-                <button type="submit" class="btn btn-danger mb-2 float-right">
-                    <i class="material-icons float-left">search</i> Procurar</button>
+                <input type="text" class="form-control" placeholder="Digite o que você procura" ng-model="search">
             </div>
         </form>
 
@@ -107,16 +94,18 @@
         <br>
 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" ng-repeat="product in products | filter:search">
                 <div class="card">
-                    <img class="d-block w-100 animated fadeInUp" src="https://lorempixel.com/320/240/technics/4" alt="First slide">
+                    <img class="d-block w-100 animated fadeInUp" ng-src="{{product.imagem}}" alt="First slide">
                     <div class="card-body">
-                        <h5 class="card-title animated fadeInUp">Nome do produto</h5>
-                        <p class="card-text animated fadeInUp">Uma bela descrição deste lindo produto que vendemos aqui nesse maravilhosa loja.</p>
+                        <h5 class="card-title animated fadeInUp">
+                            <strong>{{product.nome}}</strong>
+                        </h5>
+                        <p class="card-text animated fadeInUp">{{product.descricao}}</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="animated fadeInUp list-group-item">
-                            <strong>Preço: </strong> R$ 249,90</li>
+                            <strong>Preço: </strong> R$ {{product.valor}}</li>
                     </ul>
                     <div class="card-body">
                         <a href="detalhes.html" class="animated fadeInUp card-link">Ver detalhes</a>
@@ -124,96 +113,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="d-block w-100 animated fadeInUp" src="https://lorempixel.com/320/240/technics/5" alt="First slide">
-                    <div class="card-body">
-                        <h5 class="card-title animated fadeInUp">Nome do produto</h5>
-                        <p class="card-text animated fadeInUp">Uma bela descrição deste lindo produto que vendemos aqui nesse maravilhosa loja.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="animated fadeInUp list-group-item">
-                            <strong>Preço: </strong> R$ 249,90</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="detalhes.html" class="animated fadeInUp card-link">Ver detalhes</a>
-                        <a href="carrinho.html" class="animated fadeInUp card-link">Adicionar ao carrinho</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="d-block w-100 animated fadeInUp" src="https://lorempixel.com/320/240/technics/6" alt="First slide">
-                    <div class="card-body">
-                        <h5 class="card-title animated fadeInUp">Nome do produto</h5>
-                        <p class="card-text animated fadeInUp">Uma bela descrição deste lindo produto que vendemos aqui nesse maravilhosa loja.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="animated fadeInUp list-group-item">
-                            <strong>Preço: </strong> R$ 249,90</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="detalhes.html" class="animated fadeInUp card-link">Ver detalhes</a>
-                        <a href="carrinho.html" class="animated fadeInUp card-link">Adicionar ao carrinho</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="d-block w-100 animated fadeInUp" src="https://lorempixel.com/320/240/technics/7" alt="First slide">
-                    <div class="card-body">
-                        <h5 class="card-title animated fadeInUp">Nome do produto</h5>
-                        <p class="card-text animated fadeInUp">Uma bela descrição deste lindo produto que vendemos aqui nesse maravilhosa loja.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="animated fadeInUp list-group-item">
-                            <strong>Preço: </strong> R$ 249,90</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="detalhes.html" class="animated fadeInUp card-link">Ver detalhes</a>
-                        <a href="carrinho.html" class="animated fadeInUp card-link">Adicionar ao carrinho</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="d-block w-100 animated fadeInUp" src="https://lorempixel.com/320/240/technics/8" alt="First slide">
-                    <div class="card-body">
-                        <h5 class="card-title animated fadeInUp">Nome do produto</h5>
-                        <p class="card-text animated fadeInUp">Uma bela descrição deste lindo produto que vendemos aqui nesse maravilhosa loja.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="animated fadeInUp list-group-item">
-                            <strong>Preço: </strong> R$ 249,90</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="detalhes.html" class="animated fadeInUp card-link">Ver detalhes</a>
-                        <a href="carrinho.html" class="animated fadeInUp card-link">Adicionar ao carrinho</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="d-block w-100 animated fadeInUp" src="https://lorempixel.com/320/240/technics/9" alt="First slide">
-                    <div class="card-body">
-                        <h5 class="card-title animated fadeInUp">Nome do produto</h5>
-                        <p class="card-text animated fadeInUp">Uma bela descrição deste lindo produto que vendemos aqui nesse maravilhosa loja.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="animated fadeInUp list-group-item">
-                            <strong>Preço: </strong> R$ 249,90</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="detalhes.html" class="animated fadeInUp card-link">Ver detalhes</a>
-                        <a href="carrinho.html" class="animated fadeInUp card-link">Adicionar ao carrinho</a>
-                    </div>
-                </div>
-            </div>
+        </div>
         </div>
     </main>
 

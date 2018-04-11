@@ -1,0 +1,240 @@
+{
+    "imagens": [
+        {
+            "url": "https://lorempixel.com/1554/443/technics/"
+        },
+        {
+            "url": "https://lorempixel.com/1554/443/technics/"
+        },
+        {
+            "url": "https://lorempixel.com/1554/443/technics/"
+        },
+        {
+            "url": "https://lorempixel.com/1554/443/technics/"
+        },
+        {
+            "url": "https://lorempixel.com/1554/443/technics/"
+        },
+        {
+            "url": "https://lorempixel.com/1554/443/technics/"
+        },
+        {
+            "url": "https://lorempixel.com/1554/443/technics/"
+        },
+        {
+            "url": "https://lorempixel.com/1554/443/technics/"
+        },
+        {
+            "url": "https://lorempixel.com/1554/443/technics/"
+        },
+        {
+            "url": "https://lorempixel.com/1554/443/technics/"
+        },
+        {
+            "url": "https://lorempixel.com/1554/443/technics/"
+        },
+        {
+            "url": "https://lorempixel.com/1554/443/technics/"
+        }
+    ],
+    "products": [
+        {
+            "nome": "Horizon",
+            "descricao": "Desenvolvedora: Guerrilla, Plataforma: Play Station 4, Código: 9411397",
+            "valor": 164.49,
+            "imagem": "https://lorempixel.com/320/240/technics/2"
+        },
+        {
+            "nome": "Street Fighter V",
+            "descricao": "Desenvolvedora: CAPCOM, Plataforma: Play Station 4, Código: 9651605",
+            "valor": 149.99,
+            "imagem": "https://lorempixel.com/320/240/technics/3"
+        },
+        {
+            "nome": "Fifa 17",
+            "descricao": "Desenvolvedora: EA Sports, Plataforma: Play Station 4, Código: 9370768",
+            "valor": 149.99,
+            "imagem": "https://lorempixel.com/320/240/technics/4"
+        },
+        {
+            "nome": "The Witcher III",
+            "descricao": "Desenvolvedora: CD Projekt RED, Plataforma: Play Station 4, Código: 9369458",
+            "valor": 129.9,
+            "imagem": "https://lorempixel.com/320/240/technics/5"
+        },
+        {
+            "nome": "Injustice 2",
+            "descricao": "Desenvolvedora: NetherRealm Studios, Plataforma: Play Station 4, Código: 9639978",
+            "valor": 249.9,
+            "imagem": "https://lorempixel.com/320/240/technics/6"
+        },
+        {
+            "nome": "Persona 5",
+            "descricao": "Desenvolvedora: ATLUS, Plataforma: Play Station 4, Código: 9440273",
+            "valor": 229.9,
+            "imagem": "https://lorempixel.com/320/240/technics/7"
+        },
+        {
+            "nome": "Overwatch",
+            "descricao": "Desenvolvedora: Blizzard, Plataforma: Play Station 4, Código: 9131985",
+            "valor": 179.9,
+            "imagem": "https://lorempixel.com/320/240/technics/8"
+        },
+        {
+            "nome": "Resident Evil 7",
+            "descricao": "Desenvolvedora: CAPCOM, Plataforma: Play Station 4, Código: 9395587",
+            "valor": 219.9,
+            "imagem": "https://lorempixel.com/320/240/technics/9"
+        },
+        {
+            "nome": "Final Fantasy XV",
+            "descricao": "Desenvolvedora: SQUARE ENIX, Plataforma: Play Station 4, Código: 9351268",
+            "valor": 249.9,
+            "imagem": "https://lorempixel.com/320/240/technics/10"
+        },
+        {
+            "nome": "Outlast 2",
+            "descricao": "Desenvolvedora: Red Barrels, Plataforma: Play Station 4, Código: 9523460",
+            "valor": 149.9,
+            "imagem": "https://lorempixel.com/320/240/technics/11"
+        },
+        {
+            "nome": "PES 2017",
+            "descricao": "Desenvolvedora: KONAMI, Plataforma: Play Station 4, Código: 9363084",
+            "valor": 129.9,
+            "imagem": "https://lorempixel.com/320/240/technics/12"
+        },
+        {
+            "nome": "Fifa 17",
+            "descricao": "Desenvolvedora: EA Sports, Plataforma: Xbox One, Código: 9370771",
+            "valor": 149.99,
+            "imagem": "https://lorempixel.com/320/240/technics/13"
+        },
+        {
+            "nome": "The Witcher III",
+            "descricao": "Desenvolvedora: CD Projekt RED, Plataforma: Xbox One, Código: 9369461",
+            "valor": 129.9,
+            "imagem": "https://lorempixel.com/320/240/technics/14"
+        },
+        {
+            "nome": "Overwatch",
+            "descricao": "Desenvolvedora: Blizzard, Plataforma: Xbox One, Código: 9319839",
+            "valor": 199.9,
+            "imagem": "https://lorempixel.com/320/240/technics/15"
+        },
+        {
+            "nome": "Ghost Recon",
+            "descricao": "Desenvolvedora: UBISOFT, Plataforma: Xbox One, Código: 9416811",
+            "valor": 149.9,
+            "imagem": "https://lorempixel.com/320/240/technics/16"
+        },
+        {
+            "nome": "Watch Dogs 2",
+            "descricao": "Desenvolvedora: UBISOFT, Plataforma: Xbox One, Código: 9384447",
+            "valor": 149.9,
+            "imagem": "https://lorempixel.com/320/240/technics/17"
+        },
+        {
+            "nome": "Dark Souls III",
+            "descricao": "Desenvolvedora: Bandai Namco, Plataforma: Xbox One, Código: 9479054",
+            "valor": 199.9,
+            "imagem": "https://lorempixel.com/320/240/technics/18"
+        },
+        {
+            "nome": "For Honnor",
+            "descricao": "Desenvolvedora: UBISOFT, Plataforma: Xbox One, Código: 9414777",
+            "valor": 159.9,
+            "imagem": "https://lorempixel.com/320/240/technics/19"
+        },
+        {
+            "nome": "Injuntice 2",
+            "descricao": "Desenvolvedora: NetherRealm Studios, Plataforma: Xbox One, Código: 9487967",
+            "valor": 249.9,
+            "imagem": "https://lorempixel.com/320/240/technics/20"
+        },
+        {
+            "nome": "Gears of War 4",
+            "descricao": "Desenvolvedora: The Coalition, Plataforma: Xbox One, Código: 9369420",
+            "valor": 99.9,
+            "imagem": "https://lorempixel.com/320/240/technics/21"
+        },
+        {
+            "nome": "Final Fantasy XV",
+            "descricao": "Desenvolvedora: Squarce Enix, Plataforma: Xbox One, Código: 9351269",
+            "valor": 249.9,
+            "imagem": "https://lorempixel.com/320/240/technics/22"
+        },
+        {
+            "nome": "Mortal Kombat XL",
+            "descricao": "Desenvolvedora: NetherRealm Studios, Plataforma: Xbox One, Código: 9280736",
+            "valor": 129.9,
+            "imagem": "https://lorempixel.com/320/240/technics/23"
+        },
+        {
+            "nome": "Resident Evil 7",
+            "descricao": "Desenvolvedora: CAPCOM, Plataforma: Xbox One, Código: 9395590",
+            "valor": 219.9,
+            "imagem": "https://lorempixel.com/320/240/technics/24"
+        },
+        {
+            "nome": "The Division",
+            "descricao": "Desenvolvedora: UBISOFT, Plataforma: Xbox One, Código: 9258976",
+            "valor": 99.9,
+            "imagem": "https://lorempixel.com/320/240/technics/25"
+        },
+        {
+            "nome": "Just Dance 2017",
+            "descricao": "Desenvolvedora: UBISOFT, Plataforma: Xbox One, Código: 9153641",
+            "valor": 149.9,
+            "imagem": "https://lorempixel.com/320/240/technics/26"
+        },
+        {
+            "nome": "Titanfall 2",
+            "descricao": "Desenvolvedora: EA Sports, Plataforma: Xbox One, Código: 9380186",
+            "valor": 149.9,
+            "imagem": "https://lorempixel.com/320/240/technics/27"
+        },
+        {
+            "nome": "Rainbow Six Siege",
+            "descricao": "Desenvolvedora: UBISOFT, Plataforma: Play Station 4, Código: 9168486",
+            "valor": 129.9,
+            "imagem": "https://lorempixel.com/320/240/technics/28"
+        },
+        {
+            "nome": "Rainbow Six Siege",
+            "descricao": "Desenvolvedora: UBISOFT, Plataforma: Xbox One, Código: 9168487",
+            "valor": 129.9,
+            "imagem": "https://lorempixel.com/320/240/technics/29"
+        },
+        {
+            "nome": "Mario & Sonic - At The Rio 2016 Olympic Games",
+            "descricao": "Desenvolvedora: Nintendo, Plataforma: Wii U, Código: 9346537",
+            "valor": 199.9,
+            "imagem": "https://lorempixel.com/320/240/technics/30"
+        },
+        {
+            "nome": "New Super Mario Bros.U",
+            "descricao": "Desenvolvedora: Nintendo, Plataforma: Wii U, Código: 9589296",
+            "valor": 199.9,
+            "imagem": "https://lorempixel.com/320/240/technics/31"
+        },
+        {
+            "nome": "Super Smash Bros",
+            "descricao": "Desenvolvedora: Nintendo, Plataforma: Wii U, Código: 9824057",
+            "valor": 169.9,
+            "imagem": "https://lorempixel.com/320/240/technics/32"
+        },
+        {
+            "nome": "New Super Luigi.U",
+            "descricao": "Desenvolvedora: Nintendo, Plataforma: Wii U, Código: 9526824",
+            "valor": 199.9,
+            "imagem": "https://lorempixel.com/320/240/technics/33"
+        },
+        {
+            "nome": "Logo City Undercover",
+            "descricao": "Desenvolvedora: Nintendo, Plataforma: Wii U, Código: 9602978",
+            "valor": 99.9,
+            "imagem": "https://lorempixel.com/320/240/technics/34"
+        }
+    ]
+}
